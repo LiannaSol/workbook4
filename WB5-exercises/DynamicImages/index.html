@@ -1,0 +1,16 @@
+div>
+<img src="..." />  <p>describe image above</p>
+</div>
+<! -------->
+
+<div id="imagesDiv">
+    <img src="images/store.jpg" alt="The store" /> <img src="images/girl.jpg" alt="Girl's jacket"> <img src="images/boy.jpg" alt="Boy's jacket"> <img id="saleImg"
+              src="images/sale.jpg" alt="Girl in a jacket">
+      </div>
+    
+    
+      JavaScript
+    // find the element to remove
+    let saleImg = document.getElementById("saleImg");
+    // find the parent of the element to remove
+    let imagesDiv = document.getElementById("imagesDiv"); imagesDiv.removeChild(saleImg);
